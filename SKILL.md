@@ -1901,13 +1901,21 @@ A ↔ B 同时存在于一个人身上 = <一句话点出反差>
 
 ### 10.1 简报文件路径
 
+**命名规范（强制）**：
+
 ```
-~/.aoe/meeting-secretary/contacts/<人名>_<单位或场景>/meetings/<YYYY-MM-DD>_<主题>.md
+~/.aoe/meeting-secretary/contacts/<人名>_<单位>/meetings/<人名>_<职业或职能>_<YYYY-MM-DD>.md
 ```
 
+- **文件夹名** = `<人名>_<单位>`（让用户一眼知道这是谁 + 在哪家公司）
+- **文件名** = `<人名>_<职业或职能>_<YYYY-MM-DD>.md`（打开前就知道是谁、做什么的、哪天见的）
+
+**为什么**：用户记不住日期，记得住人名。文件名开头带人名 = 文件列表横扫就能定位。职业/职能放中间 = 提醒用户这次见的是哪个角色（同一个人在不同角色下见面策略不同）。
+
 示例：
-- `~/.aoe/meeting-secretary/contacts/李四_某科技媒体/meetings/2026-04_访谈准备.md`
-- `~/.aoe/meeting-secretary/contacts/张三_红杉资本/meetings/2026-05-03_种子轮咨询.md`
+- `~/.aoe/meeting-secretary/contacts/李四_某科技媒体/meetings/李四_某节目访谈_2026-04-17.md`
+- `~/.aoe/meeting-secretary/contacts/张三_红杉资本/meetings/张三_VC合伙人_2026-05-03.md`
+- `~/.aoe/meeting-secretary/contacts/周琼_淘宝/meetings/周琼_淘宝搜索_2026-04-17.md`
 
 ### 10.2 简报完整模板
 
@@ -2271,14 +2279,17 @@ cat ~/.aoe/meeting-secretary/contacts/<人名>/meetings/<最近一次>.md
 │   ├── 李四_某科技媒体/
 │   │   ├── profile.md               ← 对方累积档案
 │   │   ├── meetings/
-│   │   │   ├── 2026-04-17_访谈准备.md
-│   │   │   └── 2026-05-20_录节目后复盘.md
+│   │   │   ├── 李四_某节目访谈_2026-04-17.md
+│   │   │   └── 李四_节目复盘_2026-05-20.md
 │   │   └── research_raw/            ← 原始搜索数据
 │   │       ├── x_tweets.md
 │   │       ├── wechat_articles.md
 │   │       ├── podcast_episodes.md
 │   │       └── ...
-│   ├── 张三_红杉/
+│   ├── 张三_红杉资本/
+│   │   ├── profile.md
+│   │   └── meetings/
+│   │       └── 张三_VC合伙人_2026-05-03.md
 │   └── ...
 │
 └── config.json                      ← 全局配置
@@ -2663,7 +2674,7 @@ Read: <path> offset: 100 limit: 200  # 大文件分段读
 
 ## 十五、附录：完整案例参考（真实案例）
 
-> 这是 skill 首次验证的真实案例。完整产出见 `~/.aoe/meeting-secretary/contacts/李四_某科技媒体/meetings/2026-04_访谈准备.md`。
+> 这是 skill 首次验证的真实案例。完整产出见 `~/.aoe/meeting-secretary/contacts/李四_某科技媒体/meetings/李四_某节目访谈_2026-04-17.md`。
 
 ### 15.1 案例背景
 
