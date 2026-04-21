@@ -167,3 +167,22 @@ MIT License — 见 [LICENSE](./LICENSE)
 
 *v2.0 · 2026-04-17*
 *基于产品设计 v3 + 18 领域方法论武器库 + 真实案例实战验证*
+
+---
+
+## 📱 关注作者 / Follow Me
+
+如果这个仓库对你有帮助，欢迎关注我。后面我会持续更新更多 AI Skill、会面准备、信息整理和方法论工作流。
+
+If this repo helped you, follow me for more AI skills, meeting prep workflows, research systems, and practical frameworks.
+
+- X (Twitter): [@xiaoerzhan](https://x.com/xiaoerzhan)
+- 微信公众号 / WeChat Official Account: 扫码关注 / Scan to follow
+
+<p align="center">
+  <img src="./follow-wechat-qrcode.jpg" alt="Jane WeChat Official Account QR code" width="300" />
+</p>
+
+<p align="center"><strong>中文：</strong>欢迎关注我的公众号，一起研究 AI Skill、会面准备、人物研究和方法论应用。</p>
+
+<p align="center"><strong>English:</strong> Follow my WeChat Official Account for more AI skills, meeting prep workflows, people research, and practical frameworks.</p>
